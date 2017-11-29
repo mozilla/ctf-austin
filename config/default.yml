@@ -2,7 +2,7 @@ server:
   port: 3000
 application:
   domain: "juice-sh.op"
-  name: "OWASP Juice Shop"
+  name: "Mozilla Austin CTF"
   logo: "JuiceShop_Logo.png"
   favicon: "favicon_v2.ico"
   numberOfRandomFakeUsers: 0
@@ -11,8 +11,8 @@ application:
   showGitHubRibbon: true
   showChallengeHints: true
   theme: "slate" # Options: cerulean  cosmo  cyborg  darkly  flatly lumen  paper  readable  sandstone  simplex  slate  spacelab  superhero  united  yeti
-  twitterUrl: "https://twitter.com/owasp_juiceshop"
-  facebookUrl: "https://www.facebook.com/owasp.juiceshop"
+  twitterUrl: "https://twitter.com/mozillasecurity"
+  facebookUrl: "https://www.facebook.com/"
   recyclePage:
     topProductImage: "fruit_press.jpg"
     bottomProductImage: "apple_pressings.jpg"
@@ -50,11 +50,11 @@ products:
     reviews:
       - text: 'Fry liked it too.'
         author: 'bender'
-  - name: 'OWASP Juice Shop T-Shirt'
+  - name: 'Mozilla Austin CTF T-Shirt'
     description: 'Real fans wear it 24/7!'
     price: 22.49
     image: 'fan_shirt.jpg'
-  - name: 'OWASP Juice Shop CTF Girlie-Shirt'
+  - name: 'Mozilla Austin CTF CTF Girlie-Shirt'
     description: 'For serious Capture-the-Flag heroines only!'
     price: 22.49
     image: 'fan_girlie.jpg'
@@ -68,24 +68,24 @@ products:
     price: 29.99
     image: 'undefined.jpg'
     useForChristmasSpecialChallenge: true
-  - name: 'OWASP Juice Shop Sticker (2015/2016 design)'
+  - name: 'Mozilla Austin CTF Sticker (2015/2016 design)'
     description: 'Die-cut sticker with the official 2015/2016 logo. By now this is a rare collectors item. <em>Out of stock!</em>'
     price: 999.99
     image: 'sticker.png'
     deletedDate: '2017-04-28'
-  - name: 'OWASP Juice Shop Sticker'
+  - name: 'Mozilla Austin CTF Sticker'
     description: 'You want to put <a href="https://www.stickermule.com/de/user/1070702817/Sticker" target="_blank">one of these beauties</a> on your laptop. You definitely want that. Trust me.'
     price: 2.99
     image: 'sticker_facelift.png'
-  - name: 'OWASP Juice Shop CTF Sticker'
+  - name: 'Mozilla Austin CTF CTF Sticker'
     description: 'If you are a serious flag hunter, this is a mandatory laptop decal.'
     price: 2.99
     image: 'ctf_sticker.png'
-  - name: 'OWASP Juice Shop Mug'
+  - name: 'Mozilla Austin CTF Mug'
     description: 'Black mug with regular logo on one side and CTF logo on the other! Your colleagues will envy you!'
     price: 21.99
     image: 'fan_mug.jpg'
-  - name: 'OWASP Juice Shop Hoodie'
+  - name: 'Mozilla Austin CTF Hoodie'
     description: 'Mr. Robot-style apparel. But in black. And with logo.'
     price: 49.99
     image: 'fan_hoodie.jpg'
@@ -123,7 +123,7 @@ products:
     reviews:
       - text: 'A vital ingredient for a succesful playthrough.'
         author: 'jim'
-  - name: 'OWASP Juice Shop Logo (3D-printed)'
+  - name: 'Mozilla Austin CTF Logo (3D-printed)'
     description: 'This rare item was designed and handcrafted in Sweden. This is why it is so incredibly expensive despite its complete lack of purpose.'
     price: 99.99
     image: '3d_keychain.jpg' # Exif metadata contains "OpenSCAD" as subtle hint...
@@ -153,7 +153,7 @@ products:
     description: 'Brilliant. Just brilliant. You can actually purchase it for real <a href="https://www.teepublic.com/t-shirt/1252931-jawa-script" target="_blank">over here</a>.'
     price: 20
     image: 'jawa_script.jpg'
-  - name: 'OWASP Juice Shop Sweden Tour 2017 Sticker Sheet (Special Edition)'
+  - name: 'Mozilla Austin CTF Sweden Tour 2017 Sticker Sheet (Special Edition)'
     description: '10 sheets of <a href="https://www.stickermule.com/artworks/1188370/shared">Sweden-themed stickers</a>  with 15 stickers on each.'
     price: 19.10
     image: 'stickersheet_se.png'
