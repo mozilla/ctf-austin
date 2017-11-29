@@ -38,9 +38,11 @@ app/index.html
 app/public/*.*
 !app/public/favicon_ctf.ico
 !app/public/favicon_v2.ico
+!app/public/MozillaCFT.ico
 
 # Logos downloaded during customizazion
 app/public/images/*.*
+!app/public/images/MozillaCTF*.*
 !app/public/images/JuiceShop*.*
 
 # Product images downloaded during customizazion

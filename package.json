@@ -1,25 +1,10 @@
 {
-  "name": "juice-shop",
-  "version": "5.0.3",
+  "name": "MozillaCTF",
+  "version": "1.0.1",
   "description": "An intentionally insecure JavaScript Web Application",
   "homepage": "http://owasp-juice.shop",
-  "author": "Björn Kimminich <bjoern.kimminich@owasp.org> (https://www.owasp.org/index.php/User:Bjoern_Kimminich)",
+  "author": "Firefox Operartions Security Team <foxsec@mozilla.com>",
   "contributors": [
-    "Björn Kimminich",
-    "Aaron Edwards",
-    "Alec Brooks",
-    "Dinis Cruz",
-    "Timo Pagel",
-    "Gorka Vicente",
-    "Alvaro Viebrantz",
-    "Johanna A",
-    "Stephen OBrien",
-    "Joe Butler",
-    "Abhishek bundela",
-    "ninoseki",
-    "Jannik Hollenbach",
-    "Viktor Lindström",
-    "Achim Grimm"
   ],
   "private": true,
   "keywords": [
@@ -118,10 +103,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/bkimminich/juice-shop.git"
+    "url": "https://github.com/mozilla-services/ctf-austin.git"
   },
   "bugs": {
-    "url": "https://github.com/bkimminich/juice-shop/issues"
+    "url": "https://github.com/mozilla-services/ctf-austin/issues"
   },
   "license": "MIT",
   "scripts": {
