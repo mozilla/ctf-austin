@@ -1,7 +1,7 @@
 {
-  "name": "juice-shop",
+  "name": "MozillaCTF",
   "description": "An intentionally insecure JavaScript Web Application",
-  "version": "5.0.3",
+  "version": "1.0.1",
   "private": true,
   "dependencies": {
     "angular": "~1.5",

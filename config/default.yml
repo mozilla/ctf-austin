@@ -1,15 +1,15 @@
 server:
   port: 3000
 application:
-  domain: "juice-sh.op"
+  domain: "mozilla-ctf.op"
   name: "Mozilla Austin CTF"
-  logo: "JuiceShop_Logo.png"
-  favicon: "favicon_v2.ico"
+  logo: "MozillaCTF.png"
+  favicon: "MozillaCTF.ico"
   numberOfRandomFakeUsers: 0
   showChallengeSolvedNotifications: true
-  showCtfFlagsInNotifications: false
-  showGitHubRibbon: true
-  showChallengeHints: true
+  showCtfFlagsInNotifications: true
+  showChallengeHints: false
+  showGitHubRibbon: false
   theme: "slate" # Options: cerulean  cosmo  cyborg  darkly  flatly lumen  paper  readable  sandstone  simplex  slate  spacelab  superhero  united  yeti
   twitterUrl: "https://twitter.com/mozillasecurity"
   facebookUrl: "https://www.facebook.com/"
