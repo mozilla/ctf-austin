@@ -1,4 +1,4 @@
-# OWASP Juice Shop - An intentionally insecure JavaScript Web Application
+# Mozilla Austin CTF
 FROM            node:6-alpine
 MAINTAINER      Firefox Operartions Security Team <foxsec@mozilla.com>
 LABEL version = "1.0.1"
