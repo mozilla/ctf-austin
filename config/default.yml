@@ -104,6 +104,11 @@ products:
     price: 5.09
   - name: "Mozilla Horizontal T-Shirt"
     price: 5.94
+  - name: 'OWASP SSL Advanced Forensic Tool (O-Saft)'
+    description: 'O-Saft is an easy to use tool to show information about SSL certificate and tests the SSL connection according given list of ciphers and various SSL configurations.'
+    price: 0.01
+    image: 'owasp_osaft.jpg'
+    useForProductTamperingChallenge: true
   - name: 'OWASP Zed Attack Proxy (ZAP)'
     description: "ZAP is one of the world’s most popular free security tools and can help you automatically find security vulnerabilities while you are developing and testing your applications."
     price: 0.01
