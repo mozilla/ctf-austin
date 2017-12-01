@@ -17,144 +17,110 @@ application:
     topProductImage: "fruit_press.jpg"
     bottomProductImage: "apple_pressings.jpg"
 products:
-  - name: "Apple Juice (1000ml)"
-    price: 1.99
-    description: "The all-time classic."
-    image: "apple_juice.jpg"
+  - name: "Champion Sweatshirt with a Drawstring Tote"
+    price: 68.89
+    image: "Gear-200155415.jpg"
     reviews:
       - text: 'One of my favorites!'
         author: 'admin' # Options: admin, jim, bender, ciso, support
-  - name: 'Orange Juice (1000ml)'
-    description: 'Made from oranges hand-picked by Uncle Dittmeyer.'
-    price: 2.99
-    image: 'orange_juice.jpg'
-  - name: 'Eggfruit Juice (500ml)'
-    description: 'Now with even more exotic flavour.'
-    price: 8.99
-    image: 'eggfruit_juice.jpg'
+  - name: "Rickshaw Commuter 2.0 Laptop Bag"
+    price: 205.00
+    image: "Gear-200155749.jpg"
+  - name: "Moleskine Notebook"
+    price: 33.00
+    image: "Gear-200155752.jpg"
     reviews:
       - text: 'I bought it, would buy again. 5/7'
         author: 'admin'
-  - name: 'Raspberry Juice (1000ml)'
-    description: 'Made from blended Raspberry Pi, water and sugar.'
-    price: 4.99
-    image: 'raspberry_juice.jpg'
-  - name: 'Lemon Juice (500ml)'
-    description: 'Sour but full of vitamins.'
-    price: 2.99
-    image: 'lemon_juice.jpg'
-  - name: 'Banana Juice (1000ml)'
-    description: 'Monkeys love it the most.'
-    price: 1.99
-    image: 'banana_juice.jpg'
+  - name: "Special Package 1"
+    description: "This Very Splendid Package includes a ladies navy t-shirt (not shown), a baseball cap, and a coffee mug in a drawstring tote."
+    price: 34.00
+    image: "Gear-200157452.jpg"
+  - name: "Special Package 2"
+    description: "This Very Splendid Package includes a unisex navy t-shirt, a baseball cap, and a coffee mug in a drawstring tote."
+    price: 37.00
+    image: "Gear-200157454.jpg"
+  - name: "Special Package 3"
+    description: "The Most Splendid Package includes a Champion sweatshirt in a drawstring tote, a Moleskine notebook, and a Rickshaw Commuter 2.0 Laptop Bag."
+    price: 300.89
+    image: "Gear-200157451.jpg"
+  - name: "Unisex t-shirt, navy"
+    price: 13.51
+    image: "Gear-200155342.jpg"
+  - name: "Ladies t-shirt, navy"
+    price: 10.00
+    image: "Gear-200155413.jpg"
+  - name: "Unisex t-shirt, lapis"
+    price: 13.51
+    image: "Gear-unisex-t-shirt-lapis.jpg"
+  - name: "Black cap w/tote"
+    price: 17.75
+    image: "Gear-200155339.jpg"
+  - name: "Beanie"
+    price: 5.50
+    image: "Gear-200155340.jpg"
+    reviews:
+      - text: 'One of my favorites.'
+        author: 'jim'
+  - name: "Drawstring tote"
+    price: 5.50
+    image: "Gear-200155751.jpg"
+  - name: "Glossy finish ceramic mug"
+    price: 8.81
+    image: "Gear-200155758.jpg"
+  - name: "3 inch round Firefox sticker, individual"
+    price: 0.11
+    description: "1 roll = 500 stickers (please request 500 if you need a full roll)"
+    image: "Gear-200155753.jpg"
+  - name: "Silicone wristband"
+    price: 0.32
+    image: "Gear-200155756.jpg"
     reviews:
       - text: 'Fry liked it too.'
         author: 'bender'
-  - name: 'Mozilla Austin CTF T-Shirt'
-    description: 'Real fans wear it 24/7!'
-    price: 22.49
-    image: 'fan_shirt.jpg'
-  - name: 'Mozilla Austin CTF CTF Girlie-Shirt'
-    description: 'For serious Capture-the-Flag heroines only!'
-    price: 22.49
-    image: 'fan_girlie.jpg'
-  - name: 'OWASP SSL Advanced Forensic Tool (O-Saft)'
-    description: 'O-Saft is an easy to use tool to show information about SSL certificate and tests the SSL connection according given list of ciphers and various SSL configurations.'
+  - name: "Vertical laminated conference badge"
+    price: 2.33
+    image: "Gear-200155755.jpg"
+  - name: "Mozilla lanyard with bulldog clip"
+    price: 1.65
+    image: "Gear-200155754.jpg"
+  - name: "Firefox tattoo, 50 pack"
+    price: 4.00
+    image: "Gear-200155757.jpg"
+  - name: "1.25 inch Firefox Button, 25 pack"
+    price: 7.00
+  - name: "Mozilla Cap"
+    price: 4.63
+  - name: "Fox Plush"
+    price: 8.60
+  - name: "Mozilla custom hoodie"
+    price: 19.66
+    reviews:
+      - text: 'You gotta get this.'
+        author: 'jim'
+  - name: "Woman's Firefox Logo T-Shirt (grey)"
+    price: 4.31
+  - name: "Women's Vertical T-Shirt"
+    price: 5.09
+  - name: "Mozilla Horizontal T-Shirt"
+    price: 5.94
+  - name: 'OWASP Zed Attack Proxy (ZAP)'
+    description: "ZAP is one of the world’s most popular free security tools and can help you automatically find security vulnerabilities while you are developing and testing your applications."
     price: 0.01
-    image: 'owasp_osaft.jpg'
+    image: 'zap.png'
     useForProductTamperingChallenge: true
   - name: 'Christmas Super-Surprise-Box (2014 Edition)'
-    description: 'Contains a random selection of 10 bottles (each 500ml) of our tastiest juices and an extra fan shirt (3XL) for an unbeatable price!'
+    description: 'Contains a random selection of stickers and three Unisex t-shirts (3XL) for an unbeatable price!'
     price: 29.99
     image: 'undefined.jpg'
     useForChristmasSpecialChallenge: true
-  - name: 'Mozilla Austin CTF Sticker (2015/2016 design)'
-    description: 'Die-cut sticker with the official 2015/2016 logo. By now this is a rare collectors item. <em>Out of stock!</em>'
-    price: 999.99
-    image: 'sticker.png'
-    deletedDate: '2017-04-28'
-  - name: 'Mozilla Austin CTF Sticker'
-    description: 'You want to put <a href="https://www.stickermule.com/de/user/1070702817/Sticker" target="_blank">one of these beauties</a> on your laptop. You definitely want that. Trust me.'
-    price: 2.99
-    image: 'sticker_facelift.png'
-  - name: 'Mozilla Austin CTF CTF Sticker'
-    description: 'If you are a serious flag hunter, this is a mandatory laptop decal.'
-    price: 2.99
-    image: 'ctf_sticker.png'
-  - name: 'Mozilla Austin CTF Mug'
-    description: 'Black mug with regular logo on one side and CTF logo on the other! Your colleagues will envy you!'
-    price: 21.99
-    image: 'fan_mug.jpg'
-  - name: 'Mozilla Austin CTF Hoodie'
-    description: 'Mr. Robot-style apparel. But in black. And with logo.'
-    price: 49.99
-    image: 'fan_hoodie.jpg'
-  - name: 'Woodruff Syrup "Forest Master X-Treme"'
-    description: 'Harvested and manufactured in the Black Forest, Germany. Can cause hyperactive behavior in children. Can cause permanent green tongue when consumed undiluted.'
-    price: 6.99
-    image: 'woodruff_syrup.jpg'
-  - name: 'Green Smoothie'
-    description: 'Looks poisonous but is actually very good for your health! Made from green cabbage, spinach, kiwi and grass.'
-    price: 1.99
-    image: 'green_smoothie.jpg'
-    reviews:
-      - text: 'Fresh out of a replicator.'
-        author: 'jim'
-  - name: 'Quince Juice (1000ml)'
-    description: 'Juice of the <em>Cydonia oblonga</em> fruit. Not exactly sweet but rich in Vitamin C.'
-    price: 4.99
-    image: 'quince.jpg'
-  - name: 'OWASP Node.js Goat'
-    description: 'OWASP NodeGoat project provides an environment to learn how OWASP Top 10 security risks apply to web applications developed using Node.js and how to effectively address them. <a href="https://www.owasp.org/index.php/Projects/OWASP_Node_js_Goat_Project" target="_blank">More...</a>'
-    price: 0.01
-    image: 'owasplogo.png'
-  - name: 'Apple Pomace'
-    description: 'Finest pressings of apples. Allergy disclaimer: Might contain traces of worms. Can be <a href="/#reccyle">sent back to us</a> for recycling.'
-    price: 0.89
-    image: 'apple_pressings.jpg'
-  - name: 'Fruit Press'
-    description: 'Fruits go in. Juice comes out. Pomace you can send back to us for recycling purposes.'
-    price: 89.99
-    image: 'fruit_press.jpg'
-  - name: 'Enhanced White Rafford`s Decoction'
-    description: 'Immediately restores a large portion of Vitality.'
-    price: 150
-    image: 'white_raffards.jpg'
-    reviews:
-      - text: 'A vital ingredient for a succesful playthrough.'
-        author: 'jim'
   - name: 'Mozilla Austin CTF Logo (3D-printed)'
     description: 'This rare item was designed and handcrafted in Sweden. This is why it is so incredibly expensive despite its complete lack of purpose.'
     price: 99.99
     image: '3d_keychain.jpg' # Exif metadata contains "OpenSCAD" as subtle hint...
     fileForRetrieveBlueprintChallenge: 'JuiceShop.stl' # ...to blueprint file type
-  - name: 'Juice Shop Artwork'
-    description: 'Unique masterpiece painted with different kinds of juice on 90g/m² lined paper.'
-    price: 278.74
-    image: 'artwork.jpg'
   - name: 'Global OWASP WASPY Award 2017 Nomnation'
     description: 'Your chance to nominate up to three quiet pillars of the OWASP community ends 2017-06-30! <a href="https://www.owasp.org/index.php/WASPY_Awards_2017">Nominate now!</a>'
     price: 0.03
     image: 'waspy.png'
     deletedDate: '2017-07-01'
-  - name: 'Melon Bike'
-    description: 'The wheels of this bicycle are made from real water melons.'
-    price: 1999
-    image: 'melon_bike.jpeg'
-  - name: 'Strawberry Juice (500ml)'
-    description: 'Sweet & tasty!'
-    price: 3.99
-    image: 'strawberry_juice.jpeg'
-  - name: 'Carrot Juice (1000ml)'
-    description: 'As the old German saying goes: "Carrots are good for the eyes. Or has anyone ever seen a rabbit with glasses?"'
-    price: 2.99
-    image: 'carrot_juice.jpeg'
-  - name: 'Jawa Script T-Shirt'
-    description: 'Brilliant. Just brilliant. You can actually purchase it for real <a href="https://www.teepublic.com/t-shirt/1252931-jawa-script" target="_blank">over here</a>.'
-    price: 20
-    image: 'jawa_script.jpg'
-  - name: 'Mozilla Austin CTF Sweden Tour 2017 Sticker Sheet (Special Edition)'
-    description: '10 sheets of <a href="https://www.stickermule.com/artworks/1188370/shared">Sweden-themed stickers</a>  with 15 stickers on each.'
-    price: 19.10
-    image: 'stickersheet_se.png'
-    
