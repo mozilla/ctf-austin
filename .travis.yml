@@ -19,4 +19,4 @@ before_script:
 script:
 - npm test
 - npm run frisby
-- NODE_ENV=ctf npm run protractor
+- npm run protractor
