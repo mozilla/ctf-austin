@@ -1,6 +1,6 @@
 application:
-  logo: "JuiceShopCTF_Logo.png"
-  favicon: "favicon_ctf.ico"
+  logo: "MozillaCTF.png"
+  favicon: "favicon_v2.ico"
   showCtfFlagsInNotifications: true
   showChallengeHints: false
   showGitHubRibbon: false
