@@ -4,7 +4,7 @@ application:
   domain: "mozilla-ctf.op"
   name: "Mozilla Austin CTF"
   logo: "MozillaCTF.png"
-  favicon: "MozillaCTF.ico"
+  favicon: "favicon_v2.ico"
   numberOfRandomFakeUsers: 0
   showChallengeSolvedNotifications: true
   showCtfFlagsInNotifications: true
@@ -14,8 +14,8 @@ application:
   twitterUrl: "https://twitter.com/mozillasecurity"
   facebookUrl: "https://www.facebook.com/"
   recyclePage:
-    topProductImage: "fruit_press.jpg"
-    bottomProductImage: "apple_pressings.jpg"
+    topProductImage: "Gear-200155340.jpg"
+    bottomProductImage: "Gear-200155753.jpg"
 products:
   - name: "Champion Sweatshirt with a Drawstring Tote"
     price: 68.89
