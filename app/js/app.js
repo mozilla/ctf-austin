@@ -1,4 +1,4 @@
-angular.module('juiceShop', [
+angular.module('swagStore', [
   'ngRoute',
   'ngCookies',
   'ngTouch',
@@ -12,7 +12,7 @@ angular.module('juiceShop', [
   'monospaced.qrcode'
 ])
 
-angular.module('juiceShop').factory('authInterceptor', ['$rootScope', '$q', '$cookies', function ($rootScope, $q, $cookies) {
+angular.module('swagStore').factory('authInterceptor', ['$rootScope', '$q', '$cookies', function ($rootScope, $q, $cookies) {
   'use strict'
   return {
     request: function (config) {
@@ -28,7 +28,7 @@ angular.module('juiceShop').factory('authInterceptor', ['$rootScope', '$q', '$co
   }
 }])
 
-angular.module('juiceShop').factory('rememberMeInterceptor', ['$rootScope', '$q', '$cookies', function ($rootScope, $q, $cookies) {
+angular.module('swagStore').factory('rememberMeInterceptor', ['$rootScope', '$q', '$cookies', function ($rootScope, $q, $cookies) {
   'use strict'
   return {
     request: function (config) {
@@ -44,17 +44,17 @@ angular.module('juiceShop').factory('rememberMeInterceptor', ['$rootScope', '$q'
   }
 }])
 
-angular.module('juiceShop').factory('socket', ['socketFactory', function (socketFactory) {
+angular.module('swagStore').factory('socket', ['socketFactory', function (socketFactory) {
   return socketFactory()
 }])
 
-angular.module('juiceShop').config(['$httpProvider', function ($httpProvider) {
+angular.module('swagStore').config(['$httpProvider', function ($httpProvider) {
   'use strict'
   $httpProvider.interceptors.push('authInterceptor')
   $httpProvider.interceptors.push('rememberMeInterceptor')
 }])
 
-angular.module('juiceShop').run(['$cookies', '$rootScope', function ($cookies, $rootScope) {
+angular.module('swagStore').run(['$cookies', '$rootScope', function ($cookies, $rootScope) {
   'use strict'
 
   $rootScope.isLoggedIn = function () {
@@ -62,7 +62,7 @@ angular.module('juiceShop').run(['$cookies', '$rootScope', function ($cookies, $
   }
 }])
 
-angular.module('juiceShop').config(['$translateProvider', function ($translateProvider) {
+angular.module('swagStore').config(['$translateProvider', function ($translateProvider) {
   'use strict'
   $translateProvider.useStaticFilesLoader({
     prefix: '/i18n/',
@@ -72,7 +72,7 @@ angular.module('juiceShop').config(['$translateProvider', function ($translatePr
   $translateProvider.fallbackLanguage('en')
 }])
 
-angular.module('juiceShop').filter('emailName', function () {
+angular.module('swagStore').filter('emailName', function () {
   return function (email) {
     // Returns only the name of a mail address
     return email.split('@')[0].split('.').join(' ')

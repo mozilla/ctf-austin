@@ -1,9 +1,8 @@
 {
-  "name": "OWASP Juice Shop",
+  "name": "Mozilla CTF",
   "description": "An intentionally insecure JavaScript Web Application",
-  "website": "https://www.owasp.org/index.php/OWASP_Juice_Shop_Project",
-  "repository": "https://github.com/bkimminich/juice-shop",
-  "logo": "https://raw.githubusercontent.com/bkimminich/juice-shop/master/app/public/images/JuiceShop_Logo.png",
+  "repository": "https://github.com/mozilla/ctf-austin",
+  "logo": "https://github.com/mozilla/ctf-austin/raw/master/app/public/images/MozillaCTF.png",
   "keywords": [
     "web security",
     "web application security",

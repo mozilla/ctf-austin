@@ -41,7 +41,7 @@ describe('/rest', () => {
   it('GET error message with information leakage when calling unrecognized path with /rest in it', done => {
     frisby.get(REST_URL + '/unrecognized')
       .expect('status', 500)
-      .expect('bodyContains', '<h1>Juice Shop (Express ~')
+      .expect('bodyContains', '<h1>Mozilla Austin CTF (Express ~')
       .expect('bodyContains', 'Unexpected path: /rest/unrecognized')
       .done(done)
   })

@@ -51,7 +51,7 @@ const config = require('config')
 let firstConnectedSocket = null
 
 global.io = io
-errorhandler.title = 'Juice Shop (Express ' + utils.version('express') + ')'
+errorhandler.title = 'Mozilla Austin CTF (Express ' + utils.version('express') + ')'
 
 /* Delete old order PDFs */
 glob(path.join(__dirname, 'ftp/*.pdf'), (err, files) => {

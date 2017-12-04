@@ -1,4 +1,4 @@
-angular.module('juiceShop').controller('QrCodeController', [
+angular.module('swagStore').controller('QrCodeController', [
   '$scope',
   'data',
   'url',

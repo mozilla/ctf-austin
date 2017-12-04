@@ -1,4 +1,4 @@
-angular.module('juiceShop').config(['$routeProvider', function ($routeProvider) {
+angular.module('swagStore').config(['$routeProvider', function ($routeProvider) {
   'use strict'
 
   $routeProvider.when('/administration', {

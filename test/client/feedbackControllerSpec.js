@@ -1,7 +1,7 @@
 describe('controllers', function () {
   var scope, controller, $httpBackend, $sce
 
-  beforeEach(module('juiceShop'))
+  beforeEach(module('swagStore'))
   beforeEach(inject(function ($injector) {
     $httpBackend = $injector.get('$httpBackend')
     $httpBackend.whenGET(/\/i18n\/.*\.json/).respond(200, {})

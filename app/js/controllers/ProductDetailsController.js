@@ -1,4 +1,4 @@
-angular.module('juiceShop').controller('ProductDetailsController', [
+angular.module('swagStore').controller('ProductDetailsController', [
   '$scope',
   '$sce',
   '$q',

@@ -1,4 +1,4 @@
-angular.module('juiceShop').controller('ServerStartedNotificationController', [
+angular.module('swagStore').controller('ServerStartedNotificationController', [
   '$scope',
   '$translate',
   '$cookies',

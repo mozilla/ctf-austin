@@ -1,7 +1,7 @@
 describe('routes', function () {
   var $route // eslint-disable-line no-unused-vars
 
-  beforeEach(module('juiceShop'))
+  beforeEach(module('swagStore'))
   beforeEach(inject(function ($injector) {
     $route = $injector.get('$route')
   }))

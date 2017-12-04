@@ -1,4 +1,4 @@
-angular.module('juiceShop').controller('BasketController', [
+angular.module('swagStore').controller('BasketController', [
   '$scope',
   '$sce',
   '$window',
@@ -126,9 +126,9 @@ angular.module('juiceShop').controller('BasketController', [
       })
     }
 
-    $scope.twitterUrl = 'https://twitter.com/owasp_juiceshop'
-    $scope.facebookUrl = 'https://www.facebook.com/owasp.juiceshop'
-    $scope.applicationName = 'OWASP Juice Shop'
+    $scope.twitterUrl = 'https://twitter.com/mozillasecurity'
+    $scope.facebookUrl = 'https://www.facebook.com/'
+    $scope.applicationName = 'Mozilla Austin CTF'
     configurationService.getApplicationConfiguration().then(function (config) {
       if (config && config.application && config.application.twitterUrl !== null) {
         $scope.twitterUrl = config.application.twitterUrl

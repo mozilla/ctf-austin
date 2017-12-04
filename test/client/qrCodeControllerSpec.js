@@ -1,7 +1,7 @@
 describe('controllers', function () {
   var scope, data, url, address, title, controller
 
-  beforeEach(module('juiceShop'))
+  beforeEach(module('swagStore'))
 
   describe('QrCodeController', function () {
     beforeEach(inject(function ($rootScope, $controller) {

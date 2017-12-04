@@ -1,7 +1,7 @@
 describe('controllers', function () {
   var scope, controller, $window, $httpBackend, $sce, $uibModal
 
-  beforeEach(module('juiceShop'))
+  beforeEach(module('swagStore'))
   beforeEach(function () {
     $window = {location: {replace: jasmine.createSpy()}, sessionStorage: {bid: 42}}
 
@@ -390,8 +390,8 @@ describe('controllers', function () {
 
       $httpBackend.flush()
 
-      expect(scope.twitterUrl).toBe('https://twitter.com/owasp_juiceshop')
-      expect(scope.facebookUrl).toBe('https://www.facebook.com/owasp.juiceshop')
+      expect(scope.twitterUrl).toBe('https://twitter.com/mozillasecurity')
+      expect(scope.facebookUrl).toBe('https://www.facebook.com/')
     }))
 
     it('should use custom twitter URL if configured', inject(function () {

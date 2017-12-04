@@ -17,7 +17,7 @@ describe('Server', () => {
     frisby.get(URL)
       .expect('status', 200)
       .expect('header', 'content-type', /text\/html/)
-      .expect('bodyContains', 'dist/juice-shop.min.js')
+      .expect('bodyContains', 'dist/swag-store.min.js')
       .done(done)
   })
 
@@ -25,7 +25,7 @@ describe('Server', () => {
     frisby.get(URL + '/whatever')
       .expect('status', 200)
       .expect('header', 'content-type', /text\/html/)
-      .expect('bodyContains', 'dist/juice-shop.min.js')
+      .expect('bodyContains', 'dist/swag-store.min.js')
       .done(done)
   })
 
@@ -146,14 +146,14 @@ describe('/ftp', () => {
   it('GET the package.json file by using Poison Null Byte attack with .pdf suffix', done => {
     frisby.get(URL + '/ftp/package.json.bak%00.pdf')
       .expect('status', 200)
-      .expect('bodyContains', '"name": "juice-shop",')
+      .expect('bodyContains', '"name": "swag-store",')
       .done(done)
   })
 
   it('GET the package.json file by using Poison Null Byte attack with .md suffix', done => {
     frisby.get(URL + '/ftp/package.json.bak%00.md')
       .expect('status', 200)
-      .expect('bodyContains', '"name": "juice-shop",')
+      .expect('bodyContains', '"name": "swag-store",')
       .done(done)
   })
 

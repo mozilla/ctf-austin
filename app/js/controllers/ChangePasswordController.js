@@ -1,4 +1,4 @@
-angular.module('juiceShop').controller('ChangePasswordController', [
+angular.module('swagStore').controller('ChangePasswordController', [
   '$scope',
   '$location',
   'UserService',

@@ -40,7 +40,7 @@ describe('redirect', () => {
   })
 
   it('tricking the whitelist should solve "redirectChallenge"', () => {
-    req.query.to = 'http://kimminich.de?to=https://github.com/bkimminich/juice-shop'
+    req.query.to = 'http://kimminich.de?to=https://github.com/mozilla/security'
     challenges.redirectChallenge = { solved: false, save: save }
 
     performRedirect()(req, res)

@@ -1,4 +1,4 @@
-angular.module('juiceShop').factory('UserService', ['$http', '$q', function ($http, $q) {
+angular.module('swagStore').factory('UserService', ['$http', '$q', function ($http, $q) {
   'use strict'
 
   var host = '/api/Users'

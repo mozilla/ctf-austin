@@ -1,4 +1,4 @@
-angular.module('juiceShop').controller('LogoutController', [
+angular.module('swagStore').controller('LogoutController', [
   '$cookies',
   '$window',
   '$location',

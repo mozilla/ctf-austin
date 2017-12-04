@@ -1,4 +1,4 @@
-angular.module('juiceShop').controller('RecycleController', [
+angular.module('swagStore').controller('RecycleController', [
   '$scope',
   'RecycleService',
   'UserService',

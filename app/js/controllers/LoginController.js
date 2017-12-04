@@ -1,4 +1,4 @@
-angular.module('juiceShop').controller('LoginController', [
+angular.module('swagStore').controller('LoginController', [
   '$scope',
   '$window',
   '$location',

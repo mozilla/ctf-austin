@@ -1,4 +1,4 @@
-angular.module('juiceShop').controller('NavbarController', [
+angular.module('swagStore').controller('NavbarController', [
   '$scope',
   '$rootScope',
   'AdministrationService', 'ConfigurationService',
@@ -15,7 +15,7 @@ angular.module('juiceShop').controller('NavbarController', [
       console.log(err)
     })
 
-    $rootScope.applicationName = 'OWASP Juice Shop'
+    $rootScope.applicationName = 'Mozilla Austin CTF'
     $rootScope.showGitHubRibbon = true
     configurationService.getApplicationConfiguration().then(function (config) {
       if (config && config.application && config.application.name !== null) {

@@ -9,7 +9,7 @@ describe('/#/search', () => {
     protractor.beforeEach.login({ email: 'admin@' + config.get('application.domain'), password: 'admin123' })
 
     it('should be possible to inject a command into the get route', () => {
-      browser.executeScript('var $http = angular.injector([\'juiceShop\']).get(\'$http\'); $http.get(\'/rest/product/sleep(1000)/reviews\');')
+      browser.executeScript('var $http = angular.injector([\'swagStore\']).get(\'$http\'); $http.get(\'/rest/product/sleep(1000)/reviews\');')
       browser.driver.sleep(5000)
       browser.ignoreSynchronization = false
     })
@@ -18,7 +18,7 @@ describe('/#/search', () => {
 
   describe('challenge "NoSql Injection"', () => {
     it('should be possible to inject a selector into the update route', () => {
-      browser.executeScript('var $http = angular.injector([\'juiceShop\']).get(\'$http\'); $http.patch(\'/rest/product/reviews\', { "id": { "$ne": -1 }, "message": "injected" });')
+      browser.executeScript('var $http = angular.injector([\'swagStore\']).get(\'$http\'); $http.patch(\'/rest/product/reviews\', { "id": { "$ne": -1 }, "message": "injected" });')
       browser.driver.sleep(1000)
       browser.ignoreSynchronization = false
     })

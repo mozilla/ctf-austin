@@ -1,4 +1,4 @@
-angular.module('juiceShop').controller('ProductReviewEditController', [
+angular.module('swagStore').controller('ProductReviewEditController', [
   '$scope',
   '$uibModalInstance',
   'ProductReviewService',

@@ -1,7 +1,7 @@
 describe('controllers', function () {
   var scope, controller, $translate
 
-  beforeEach(module('juiceShop'))
+  beforeEach(module('swagStore'))
   beforeEach(inject(function ($injector) {
     $translate = $injector.get('$translate')
   }))

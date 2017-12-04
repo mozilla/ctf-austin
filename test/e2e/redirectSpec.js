@@ -8,8 +8,8 @@ describe('/redirect', () => {
   })
 
   describe('challenge "redirect"', () => {
-    it('should redirect to target URL if https://github.com/bkimminich/juice-shop is contained in it as parameter', () => {
-      browser.driver.get(browser.baseUrl + '/redirect?to=https://www.owasp.org?trickIndexOf=https://github.com/bkimminich/juice-shop').then(() => {
+    it('should redirect to target URL if https://github.com/mozilla/security is contained in it as parameter', () => {
+      browser.driver.get(browser.baseUrl + '/redirect?to=https://www.owasp.org?trickIndexOf=https://github.com/mozilla/security').then(() => {
         expect(browser.driver.getCurrentUrl()).toMatch(/https:\/\/www\.owasp\.org/)
       })
     })
