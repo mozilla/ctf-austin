@@ -1,4 +1,4 @@
-angular.module('juiceShop').controller('OAuthController', [
+angular.module('swagStore').controller('OAuthController', [
   '$window',
   '$location',
   '$cookies',

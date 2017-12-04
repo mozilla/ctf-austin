@@ -1,4 +1,4 @@
-angular.module('juiceShop').controller('ComplaintController', [
+angular.module('swagStore').controller('ComplaintController', [
   '$scope',
   'Upload',
   'ComplaintService',

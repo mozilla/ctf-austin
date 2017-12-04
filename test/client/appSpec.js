@@ -1,7 +1,7 @@
 describe('app', function () {
   var $cookies, $rootScope, $httpProvider
 
-  beforeEach(module('juiceShop', function (_$httpProvider_) {
+  beforeEach(module('swagStore', function (_$httpProvider_) {
     $httpProvider = _$httpProvider_
   }))
   beforeEach(inject(function ($injector) {

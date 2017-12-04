@@ -1,7 +1,7 @@
 describe('controller', function () {
   var scope, controller, window
 
-  beforeEach(module('juiceShop'))
+  beforeEach(module('swagStore'))
 
   describe('LoginController', function () {
     beforeEach(inject(function ($rootScope, $window, $controller) {

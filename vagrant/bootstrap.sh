@@ -11,4 +11,4 @@ apt-get install -y docker-engine
 a2enmod proxy_http
 systemctl restart apache2
 
-docker run --restart=always -d -p 3000:3000 bkimminich/juice-shop
+docker run --restart=always -d -p 3000:3000 mozilla/ctf-austin

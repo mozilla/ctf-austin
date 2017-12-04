@@ -147,7 +147,7 @@ describe('/#/contact', () => {
 
   describe('challenge "zeroStars"', () => {
     it('should be possible to post feedback with zero stars by clicking rating twice', () => {
-      browser.executeScript('var $http = angular.injector([\'juiceShop\']).get(\'$http\'); $http.post(\'/api/Feedbacks\', {comment: \'This is the worst shop I have ever been to!\', rating: 0});')
+      browser.executeScript('var $http = angular.injector([\'swagStore\']).get(\'$http\'); $http.post(\'/api/Feedbacks\', {comment: \'This is the worst shop I have ever been to!\', rating: 0});')
     })
 
     protractor.expect.challengeSolved({ challenge: 'Zero Stars' })

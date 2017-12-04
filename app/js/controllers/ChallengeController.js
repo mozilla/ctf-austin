@@ -1,4 +1,4 @@
-angular.module('juiceShop').controller('ChallengeController', [
+angular.module('swagStore').controller('ChallengeController', [
   '$scope',
   '$sce',
   '$translate',

@@ -4,8 +4,7 @@
   "description": "An intentionally insecure JavaScript Web Application",
   "homepage": "http://owasp-juice.shop",
   "author": "Firefox Operartions Security Team <foxsec@mozilla.com>",
-  "contributors": [
-  ],
+  "contributors": [],
   "private": true,
   "keywords": [
     "web security",

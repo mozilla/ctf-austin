@@ -1,4 +1,4 @@
-angular.module('juiceShop').controller('UserDetailsController', [
+angular.module('swagStore').controller('UserDetailsController', [
   '$scope',
   '$uibModal',
   'UserService',

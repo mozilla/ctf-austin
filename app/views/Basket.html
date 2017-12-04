@@ -37,7 +37,6 @@
             <div class="row">
                 <button type="submit" id="checkoutButton" class="btn btn-success" ng-disabled="products.length < 1" ng-click="checkout()"><i class="fa fa-cart-arrow-down"></i> <span translate="BTN_CHECKOUT"></span></button>
                 <a id="collapseCouponButton" class="btn btn-warning" ng-click="couponCollapsed = !couponCollapsed"><i class="fa fa-gift fa-lg"></i></a>
-                <a id="collapsePaymentButton" class="btn btn-danger" ng-click="paymentCollapsed = !paymentCollapsed"><i class="fa fa-credit-card fa-lg"></i></a>
             </div>
         </div>
 
@@ -65,65 +64,6 @@
                         </div>
                     </div>
                 </form>
-            </div>
-        </div>
-
-        <div uib-collapse="paymentCollapsed">
-            <div class="container-fluid well">
-                <div class="row">
-                    <label translate="LABEL_PAYMENT"></label>
-                        <small>(<span translate="THANKS_FOR_SUPPORT" translate-value-juiceshop="OWASP Juice Shop" ng-show="applicationName === 'OWASP Juice Shop'"></span><span translate="THANKS_FOR_SUPPORT_CUSTOMIZED" translate-value-appname="{{applicationName}}" ng-show="applicationName !== 'OWASP Juice Shop'"></span> <i class="fa fa-heart"></i>)
-                    </small>
-                </div>
-                <div class="row">
-                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank" style="display: inline-block;">
-                        <div class="paypal_donation_button">
-                            <input type="hidden" name="cmd" value="_donations">
-                            <input type="hidden" name="business" value="paypal@owasp.org">
-                            <input type="hidden" name="lc" value="BM">
-                            <input type="hidden" name="item_name" value="OWASP Juice Shop">
-                            <input type="hidden" name="item_number" value="OWASP Foundation">
-                            <input type="hidden" name="no_note" value="0">
-                            <input type="hidden" name="currency_code" value="EUR">
-                            <input type="hidden" name="bn" value="PP-DonationsBF:btn_donate_LG.gif:NonHostedGuest">
-                            <button type="submit" name="submit" class="btn btn-danger"><i class="fa fa-paypal fa-lg"></i> PayPal</button>
-                            <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1" style="display: none !important;">
-                        </div>
-                    </form>
-                    <a href="/redirect?to=https://gratipay.com/juice-shop" target="_blank" class="btn btn-danger">
-                        <i class="fa fa-gratipay fa-lg"></i> Gratipay
-                    </a>
-                    <a href="/redirect?to=http://flattr.com/thing/3856930/bkimminichjuice-shop-on-GitHub" target="_blank" class="btn btn-danger">
-                        <i class="fa fa-money fa-lg"></i> Flattr
-                    </a>
-                    <a ng-click="showBitcoinQrCode()" class="btn btn-danger">
-                        <i class="fa fa-btc fa-lg"></i> Bitcoin
-                    </a>
-                    <a ng-click="showDashQrCode()" class="btn btn-danger">
-                        <i class="fa fa-lg">Ð</i> Dash
-                    </a>
-                    <a ng-click="showEtherQrCode()" class="btn btn-danger">
-                        <i class="fa fa-cube fa-lg"></i> Ether
-                    </a>
-                </div>
-            </div>
-            <div class="container-fluid well">
-                <div class="row">
-                    <label translate="LABEL_MERCHANDISE"></label>
-                    <small>(<span translate="OFFICIAL_MERCHANDISE_STORES" translate-value-juiceshop="OWASP Juice Shop" ng-show="applicationName === 'OWASP Juice Shop'"></span><span translate="OFFICIAL_MERCHANDISE_STORES_CUSTOMIZED" translate-value-appname="{{applicationName}}" ng-show="applicationName !== 'OWASP Juice Shop'"></span> <i class="fa fa-thumbs-up"></i>)
-                    </small>
-                </div>
-                <div class="row">
-                    <a href="/redirect?to=http://shop.spreadshirt.com/juiceshop" target="_blank" class="btn btn-danger">
-                        <i class="fa fa-shopping-bag fa-lg"></i> Spreadshirt.com
-                    </a>
-                    <a href="/redirect?to=http://shop.spreadshirt.de/juiceshop" target="_blank" class="btn btn-danger">
-                        <i class="fa fa-shopping-bag fa-lg"></i> Spreadshirt.de
-                    </a>
-                    <a href="/redirect?to=https://www.stickermule.com/user/1070702817/stickers" target="_blank" class="btn btn-danger">
-                        <i class="fa fa-sticky-note fa-lg"></i> Sticker Mule
-                    </a>
-                </div>
             </div>
         </div>
 

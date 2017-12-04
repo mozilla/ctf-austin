@@ -1,7 +1,7 @@
 describe('controllers', function () {
   var scope, controller, $httpBackend
 
-  beforeEach(module('juiceShop'))
+  beforeEach(module('swagStore'))
   beforeEach(inject(function ($injector) {
     $httpBackend = $injector.get('$httpBackend')
     $httpBackend.whenGET(/\/i18n\/.*\.json/).respond(200, {})
@@ -83,7 +83,7 @@ describe('controllers', function () {
 
       $httpBackend.flush()
 
-      expect(scope.applicationName).toBe('OWASP Juice Shop')
+      expect(scope.applicationName).toBe('Mozilla Austin CTF')
     }))
 
     it('should use custom application name URL if configured', inject(function () {

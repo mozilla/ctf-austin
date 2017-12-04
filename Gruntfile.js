@@ -11,7 +11,7 @@ module.exports = function (grunt) {
     uglify: {
       js: {
         files: {
-          'app/tmp/juice-shop.min.js': [ 'app/tmp/juice-shop.js' ]
+          'app/tmp/swag-store.min.js': [ 'app/tmp/swag-store.js' ]
         },
         options: {
           mangle: true
@@ -19,13 +19,13 @@ module.exports = function (grunt) {
       },
       dist: {
         files: {
-          'app/dist/juice-shop.min.js': [ 'app/tmp/juice-shop.min.js' ]
+          'app/dist/swag-store.min.js': [ 'app/tmp/swag-store.min.js' ]
         }
       }
     },
 
     ngtemplates: {
-      juiceShop: {
+      swagStore: {
         cwd: 'app',
         src: [ 'views/*.html' ],
         dest: 'app/tmp/views.js'
@@ -50,11 +50,11 @@ module.exports = function (grunt) {
       },
       js: {
         src: [ 'app/js/**/*.js' ],
-        dest: 'app/tmp/juice-shop.js'
+        dest: 'app/tmp/swag-store.js'
       },
       dist: {
-        src: [ 'app/tmp/juice-shop.min.js', 'app/tmp/*.js' ],
-        dest: 'app/tmp/juice-shop.min.js'
+        src: [ 'app/tmp/swag-store.min.js', 'app/tmp/*.js' ],
+        dest: 'app/tmp/swag-store.min.js'
       }
     },
 
@@ -76,7 +76,7 @@ module.exports = function (grunt) {
               'app/bower_components/**',
               'app/css/*.css',
               'app/css/geo-bootstrap/**',
-              'app/dist/juice-shop.min.js',
+              'app/dist/swag-store.min.js',
               'app/i18n/*.json',
               'app/private/**',
               'app/public/**',
@@ -115,7 +115,7 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-compress')
   grunt.loadNpmTasks('grunt-text-replace')
 
-  grunt.registerTask('minify', [ 'clean:dist', 'concat:js', 'uglify:js', 'ngtemplates:juiceShop', 'concat:dist', 'uglify:dist', 'clean:temp' ])
+  grunt.registerTask('minify', [ 'clean:dist', 'concat:js', 'uglify:js', 'ngtemplates:swagStore', 'concat:dist', 'uglify:dist', 'clean:temp' ])
   grunt.registerTask('package', [ 'clean:pckg', 'minify', 'compress:pckg' ])
   grunt.registerTask('docker', [ 'replace:dockerfile' ])
 }

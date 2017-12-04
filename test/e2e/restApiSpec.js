@@ -15,7 +15,7 @@ describe('/rest', () => {
     it('should be possible to create a new product when logged in', () => {
       const EC = protractor.ExpectedConditions
 
-      browser.executeScript('var $http = angular.injector([\'juiceShop\']).get(\'$http\'); $http.post(\'/api/Products\', {name: \'XSS3\', description: \'<script>alert("XSS3")</script>\', price: 47.11});')
+      browser.executeScript('var $http = angular.injector([\'swagStore\']).get(\'$http\'); $http.post(\'/api/Products\', {name: \'XSS3\', description: \'<script>alert("XSS3")</script>\', price: 47.11});')
 
       browser.get('/#/search')
       browser.wait(EC.alertIsPresent(), 5000, "'XSS3' alert is not present")
@@ -25,7 +25,7 @@ describe('/rest', () => {
                   alert.accept()
 
                   browser.ignoreSynchronization = true
-                  browser.executeScript('var $http = angular.injector([\'juiceShop\']).get(\'$http\'); $http.put(\'/api/Products/' + (config.get('products').length + 1) + '\', {description: \'alert disabled\'});')
+                  browser.executeScript('var $http = angular.injector([\'swagStore\']).get(\'$http\'); $http.put(\'/api/Products/' + (config.get('products').length + 1) + '\', {description: \'alert disabled\'});')
                   browser.driver.sleep(1000)
                   browser.ignoreSynchronization = false
                 })
@@ -37,7 +37,7 @@ describe('/rest', () => {
   describe('challenge "changeProduct"', () => {
     it('should be possible to change product via PUT request without being logged in', () => {
       browser.ignoreSynchronization = true
-      browser.executeScript('var $http = angular.injector([\'juiceShop\']).get(\'$http\'); $http.put(\'/api/Products/' + tamperingProductId + '\', {description: \'<a href="http://kimminich.de" target="_blank">More...</a>\'});')
+      browser.executeScript('var $http = angular.injector([\'swagStore\']).get(\'$http\'); $http.put(\'/api/Products/' + tamperingProductId + '\', {description: \'<a href="http://kimminich.de" target="_blank">More...</a>\'});')
       browser.driver.sleep(1000)
       browser.ignoreSynchronization = false
       browser.get('/#/search')

@@ -1,4 +1,4 @@
-angular.module('juiceShop').factory('RecycleService', ['$http', '$q', function ($http, $q) {
+angular.module('swagStore').factory('RecycleService', ['$http', '$q', function ($http, $q) {
   'use strict'
 
   var host = '/api/Recycles'

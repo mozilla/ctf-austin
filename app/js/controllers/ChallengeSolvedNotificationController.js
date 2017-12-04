@@ -1,4 +1,4 @@
-angular.module('juiceShop').controller('ChallengeSolvedNotificationController', [
+angular.module('swagStore').controller('ChallengeSolvedNotificationController', [
   '$scope',
   '$translate',
   '$cookies',

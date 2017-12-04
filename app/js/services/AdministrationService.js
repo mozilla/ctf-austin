@@ -1,4 +1,4 @@
-angular.module('juiceShop').factory('AdministrationService', ['$http', '$q', function ($http, $q) {
+angular.module('swagStore').factory('AdministrationService', ['$http', '$q', function ($http, $q) {
   'use strict'
 
   var host = '/rest/admin'

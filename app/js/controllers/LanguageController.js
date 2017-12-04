@@ -1,4 +1,4 @@
-angular.module('juiceShop').controller('LanguageController', [
+angular.module('swagStore').controller('LanguageController', [
   '$scope',
   '$translate',
   function ($scope, $translate) {

@@ -1,4 +1,4 @@
-angular.module('juiceShop').controller('SearchController', [
+angular.module('swagStore').controller('SearchController', [
   '$scope',
   '$location',
   function ($scope, $location) {

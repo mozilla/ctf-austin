@@ -1,4 +1,4 @@
-angular.module('juiceShop').factory('ComplaintService', ['$http', '$q', function ($http, $q) {
+angular.module('swagStore').factory('ComplaintService', ['$http', '$q', function ($http, $q) {
   'use strict'
 
   var host = '/api/Complaints'

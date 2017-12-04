@@ -1,4 +1,4 @@
-angular.module('juiceShop').factory('ProductReviewService', ['$http', '$q', function ($http, $q) {
+angular.module('swagStore').factory('ProductReviewService', ['$http', '$q', function ($http, $q) {
   'use strict'
 
   var host = '/rest/product'

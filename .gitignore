@@ -43,7 +43,6 @@ app/public/*.*
 # Logos downloaded during customizazion
 app/public/images/*.*
 !app/public/images/MozillaCTF*.*
-!app/public/images/JuiceShop*.*
 
 # Product images downloaded during customizazion
 app/public/images/products/*.*
