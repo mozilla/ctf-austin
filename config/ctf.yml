@@ -1,6 +1,0 @@
-application:
-  logo: "MozillaCTF.png"
-  favicon: "favicon_v2.ico"
-  showCtfFlagsInNotifications: true
-  showChallengeHints: false
-  showGitHubRibbon: false
