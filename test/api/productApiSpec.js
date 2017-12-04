@@ -138,7 +138,7 @@ describe('/rest/product/search', () => {
   })
 
   it('GET product search with one match returns found product', done => {
-    frisby.get(REST_URL + '/product/search?q=o-saft')
+    frisby.get(REST_URL + '/product/search?q=zap')
       .expect('status', 200)
       .expect('header', 'content-type', /application\/json/)
       .then(res => {
