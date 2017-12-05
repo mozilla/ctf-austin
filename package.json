@@ -2,7 +2,7 @@
   "name": "MozillaCTF",
   "version": "1.0.1",
   "description": "An intentionally insecure JavaScript Web Application",
-  "homepage": "http://owasp-juice.shop",
+  "homepage": "https://github.com/mozilla/security",
   "author": "Firefox Operartions Security Team <foxsec@mozilla.com>",
   "contributors": [],
   "private": true,
