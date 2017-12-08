@@ -10,7 +10,7 @@ application:
   showCtfFlagsInNotifications: true
   showChallengeHints: false
   showGitHubRibbon: false
-  theme: "slate" # Options: cerulean  cosmo  cyborg  darkly  flatly lumen  paper  readable  sandstone  simplex  slate  spacelab  superhero  united  yeti
+  theme: "united" # Options: cerulean  cosmo  cyborg  darkly  flatly lumen  paper  readable  sandstone  simplex  slate  spacelab  superhero  united  yeti
   twitterUrl: "https://twitter.com/mozcloudsec"
   facebookUrl: "https://www.facebook.com/"
   recyclePage:
