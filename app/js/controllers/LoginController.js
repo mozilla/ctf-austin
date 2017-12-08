@@ -39,7 +39,7 @@ angular.module('swagStore').controller('LoginController', [
     }
 
     var oauthProviderUrl = 'https://accounts.google.com/o/oauth2/v2/auth'
-    var clientId = '1005568560502-6hm16lef8oh46hr2d98vf2ohlnj4nfhq.apps.googleusercontent.com'
+    var clientId = '1072474842536-5b9brk3bnu8kkk0ch151dcr3i0lklpu1.apps.googleusercontent.com'
 
     var authorizedRedirectURIs = {
       'http://localhost:3000': 'http://localhost:3000'
