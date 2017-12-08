@@ -45,18 +45,18 @@ describe('/#/forgot-password', () => {
     protractor.expect.challengeSolved({challenge: 'Reset Bender\'s Password'})
   })
 
-  describe('as Bjoern', () => {
+  describe('as Psiinon', () => {
     it('should be able to reset password with his security answer', () => {
-      email.sendKeys('bjoern.kimminich@googlemail.com')
+      email.sendKeys('psiinon@gmail.com')
       browser.wait(EC.visibilityOf(securityAnswer), 1000, 'Security answer field did not become visible')
       securityAnswer.sendKeys('West-2082')
-      newPassword.sendKeys('YmpvZXJuLmtpbW1pbmljaEBnb29nbGVtYWlsLmNvbQ==')
-      newPasswordRepeat.sendKeys('YmpvZXJuLmtpbW1pbmljaEBnb29nbGVtYWlsLmNvbQ==')
+      newPassword.sendKeys('cHNpaW5vbkBnbWFpbC5jb20=')
+      newPasswordRepeat.sendKeys('cHNpaW5vbkBnbWFpbC5jb20=')
       resetButton.click()
 
       expect(element(by.css('.alert-info')).getAttribute('class')).not.toMatch('ng-hide')
     })
 
-    protractor.expect.challengeSolved({challenge: 'Reset Bjoern\'s Password'})
+    protractor.expect.challengeSolved({challenge: 'Reset Psiinon\'s Password'})
   })
 })

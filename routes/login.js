@@ -30,7 +30,7 @@ exports = module.exports = function login () {
     if (utils.notSolved(challenges.loginSupportChallenge) && req.body.email === 'support@' + config.get('application.domain') && req.body.password === 'J6aVjTgOpRs$?5l+Zkq2AYnCE@RF§P') {
       utils.solve(challenges.loginSupportChallenge)
     }
-    if (utils.notSolved(challenges.oauthUserPasswordChallenge) && req.body.email === 'bjoern.kimminich@googlemail.com' && req.body.password === 'YmpvZXJuLmtpbW1pbmljaEBnb29nbGVtYWlsLmNvbQ==') {
+    if (utils.notSolved(challenges.oauthUserPasswordChallenge) && req.body.email === 'psiinon@gmail.com' && req.body.password === 'cHNpaW5vbkBnbWFpbC5jb20=') {
       utils.solve(challenges.oauthUserPasswordChallenge)
     }
     models.sequelize.query('SELECT * FROM Users WHERE email = \'' + (req.body.email || '') + '\' AND password = \'' + insecurity.hash(req.body.password || '') + '\'', models.User, { plain: true })

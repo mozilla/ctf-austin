@@ -226,8 +226,8 @@ describe('/rest/product/search', () => {
       })
       .expect('json', 'data.?', {
         name: 4,
-        description: 'bjoern.kimminich@googlemail.com',
-        price: insecurity.hash('YmpvZXJuLmtpbW1pbmljaEBnb29nbGVtYWlsLmNvbQ==')
+        description: 'psiinon@gmail.com',
+        price: insecurity.hash('cHNpaW5vbkBnbWFpbC5jb20=')
       })
       .expect('json', 'data.?', {
         name: 5,

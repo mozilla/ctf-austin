@@ -81,15 +81,15 @@ describe('/api/Feedbacks', () => {
     frisby.post(REST_URL + '/user/login', {
       headers: jsonHeader,
       body: {
-        email: 'bjoern.kimminich@googlemail.com',
-        password: 'YmpvZXJuLmtpbW1pbmljaEBnb29nbGVtYWlsLmNvbQ=='
+        email: 'psiinon@gmail.com',
+        password: 'cHNpaW5vbkBnbWFpbC5jb20='
       }
     })
       .expect('status', 200)
       .then(res => frisby.post(API_URL + '/Feedbacks', {
         headers: { 'Authorization': 'Bearer ' + res.json.authentication.token, 'content-type': 'application/json' },
         body: {
-          comment: 'Bjoern\'s choice award!',
+          comment: 'Psiinon\'s choice award!',
           rating: 5,
           UserId: 4
         }
@@ -106,8 +106,8 @@ describe('/api/Feedbacks', () => {
     frisby.post(REST_URL + '/user/login', {
       headers: jsonHeader,
       body: {
-        email: 'bjoern.kimminich@googlemail.com',
-        password: 'YmpvZXJuLmtpbW1pbmljaEBnb29nbGVtYWlsLmNvbQ=='
+        email: 'psiinon@gmail.com',
+        password: 'cHNpaW5vbkBnbWFpbC5jb20='
       }
     })
       .expect('status', 200)

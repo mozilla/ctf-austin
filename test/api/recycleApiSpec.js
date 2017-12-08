@@ -12,7 +12,7 @@ describe('/api/Recycles', () => {
       headers: authHeader,
       body: {
         quantity: 200,
-        address: 'Bjoern Kimminich, 123 Juicy Road, Test City',
+        address: 'Simon Bennetts, 123 Security Road, Test City',
         isPickup: true,
         date: '2017-05-31'
       }

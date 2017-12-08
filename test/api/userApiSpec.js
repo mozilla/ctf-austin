@@ -118,8 +118,8 @@ describe('/rest/user/whoami', () => {
     frisby.post(REST_URL + '/user/login', {
       headers: jsonHeader,
       body: {
-        email: 'bjoern.kimminich@googlemail.com',
-        password: 'YmpvZXJuLmtpbW1pbmljaEBnb29nbGVtYWlsLmNvbQ=='
+        email: 'psiinon@gmail.com',
+        password: 'cHNpaW5vbkBnbWFpbC5jb20='
       }
     })
       .expect('status', 200)
@@ -130,7 +130,7 @@ describe('/rest/user/whoami', () => {
         id: Joi.number()
       })
       .expect('json', 'user', {
-        email: 'bjoern.kimminich@googlemail.com'
+        email: 'psiinon@gmail.com'
       }))
       .done(done)
   })
@@ -237,12 +237,12 @@ describe('/rest/user/login', () => {
       .done(done)
   })
 
-  it('POST login as bjoern.kimminich@googlemail.com with known password', done => {
+  it('POST login as psiinon@gmail.com with known password', done => {
     frisby.post(REST_URL + '/user/login', {
       headers: jsonHeader,
       body: {
-        email: 'bjoern.kimminich@googlemail.com',
-        password: 'YmpvZXJuLmtpbW1pbmljaEBnb29nbGVtYWlsLmNvbQ=='
+        email: 'psiinon@gmail.com',
+        password: 'cHNpaW5vbkBnbWFpbC5jb20='
       }
     })
       .expect('status', 200)
@@ -398,8 +398,8 @@ describe('/rest/user/change-password', () => {
     frisby.post(REST_URL + '/user/login', {
       headers: jsonHeader,
       body: {
-        email: 'bjoern.kimminich@googlemail.com',
-        password: 'YmpvZXJuLmtpbW1pbmljaEBnb29nbGVtYWlsLmNvbQ=='
+        email: 'psiinon@gmail.com',
+        password: 'cHNpaW5vbkBnbWFpbC5jb20='
       }
     })
       .expect('status', 200)
@@ -488,14 +488,14 @@ describe('/rest/user/reset-password', () => {
       .done(done)
   })
 
-  it('POST password reset for Bjoern with correct answer to his security question', done => {
+  it('POST password reset for Psiinon with correct answer to his security question', done => {
     frisby.post(REST_URL + '/user/reset-password', {
       headers: jsonHeader,
       body: {
-        email: 'bjoern.kimminich@googlemail.com',
+        email: 'psiinon@gmail.com',
         answer: 'West-2082',
-        new: 'YmpvZXJuLmtpbW1pbmljaEBnb29nbGVtYWlsLmNvbQ==',
-        repeat: 'YmpvZXJuLmtpbW1pbmljaEBnb29nbGVtYWlsLmNvbQ=='
+        new: 'cHNpaW5vbkBnbWFpbC5jb20=',
+        repeat: 'cHNpaW5vbkBnbWFpbC5jb20='
       }
     })
       .expect('status', 200)
@@ -506,7 +506,7 @@ describe('/rest/user/reset-password', () => {
     frisby.post(REST_URL + '/user/reset-password', {
       headers: jsonHeader,
       body: {
-        email: 'bjoern.kimminich@googlemail.com',
+        email: 'psiinon@gmail.com',
         answer: '25436',
         new: '12345',
         repeat: '12345'
@@ -530,7 +530,7 @@ describe('/rest/user/reset-password', () => {
     frisby.post(REST_URL + '/user/reset-password', {
       headers: jsonHeader,
       body: {
-        email: 'bjoern.kimminich@googlemail.com',
+        email: 'psiinon@gmail.com',
         answer: 'W-2082',
         repeat: '12345'
       }
@@ -544,7 +544,7 @@ describe('/rest/user/reset-password', () => {
     frisby.post(REST_URL + '/user/reset-password', {
       headers: jsonHeader,
       body: {
-        email: 'bjoern.kimminich@googlemail.com',
+        email: 'psiinon@gmail.com',
         answer: 'W-2082',
         new: '12345',
         repeat: '1234_'
@@ -575,7 +575,7 @@ describe('/rest/user/reset-password', () => {
     frisby.post(REST_URL + '/user/reset-password', {
       header: jsonHeader,
       body: {
-        email: 'bjoern.kimminich@googlemail.com',
+        email: 'psiinon@gmail.com',
         new: 'abcdef',
         repeat: 'abcdef'
       }

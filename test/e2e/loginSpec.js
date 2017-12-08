@@ -80,15 +80,15 @@ describe('/#/login', () => {
   })
 
   describe('challenge "oauthUserPassword"', () => {
-    it('should be able to log in as bjoern.kimminich@googlemail.com with base64-encoded email as password', () => {
-      email.sendKeys('bjoern.kimminich@googlemail.com')
-      password.sendKeys('YmpvZXJuLmtpbW1pbmljaEBnb29nbGVtYWlsLmNvbQ==')
+    it('should be able to log in as psiinon@gmail.com with base64-encoded email as password', () => {
+      email.sendKeys('psiinon@gmail.com')
+      password.sendKeys('cHNpaW5vbkBnbWFpbC5jb20=')
       loginButton.click()
 
       expect(browser.getLocationAbsUrl()).toMatch(/\/search/)
     })
 
-    protractor.expect.challengeSolved({challenge: 'Login Bjoern'})
+    protractor.expect.challengeSolved({challenge: 'Login Psiinon'})
   })
 
   describe('challenge "loginCiso"', () => {

@@ -90,8 +90,8 @@ describe('/rest/basket/:id', () => {
     frisby.post(REST_URL + '/user/login', {
       headers: jsonHeader,
       body: {
-        email: 'bjoern.kimminich@googlemail.com',
-        password: 'YmpvZXJuLmtpbW1pbmljaEBnb29nbGVtYWlsLmNvbQ=='
+        email: 'psiinon@gmail.com',
+        password: 'cHNpaW5vbkBnbWFpbC5jb20='
       }
     })
       .expect('status', 200)

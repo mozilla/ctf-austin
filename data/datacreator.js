@@ -400,9 +400,9 @@ function createChallenges () {
     challenges.continueCodeChallenge = challenge
   })
   models.Challenge.create({
-    name: 'Login Bjoern',
+    name: 'Login Psiinon',
     category: 'Weak Security Mechanisms',
-    description: 'Log in with Bjoern\'s user account <i>without</i> previously changing his password, applying SQL Injection, or hacking his Google account.',
+    description: 'Log in with Psiinon\'s user account <i>without</i> previously changing his password, applying SQL Injection, or hacking his Google account.',
     difficulty: 3,
     hint: addHint('The security flaw behind this challenge is 100% Juice Shop\'s fault and 0% Google\'s.'),
     hintUrl: addHint('https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/weak-security.html#log-in-with-bjoerns-user-account'),
@@ -465,6 +465,7 @@ function createChallenges () {
   }).success(challenge => {
     challenges.resetPasswordBenderChallenge = challenge
   })
+/*
   models.Challenge.create({
     name: 'Reset Bjoern\'s Password',
     category: 'Sensitive Data Exposure',
@@ -476,6 +477,7 @@ function createChallenges () {
   }).success(challenge => {
     challenges.resetPasswordBjoernChallenge = challenge
   })
+*/
   models.Challenge.create({
     name: 'Find JWT Secret',
     category: 'Weak Security Mechanism',
@@ -566,10 +568,10 @@ function createUsers () {
     users.bender = user
   })
   models.User.create({
-    email: 'bjoern.kimminich@googlemail.com',
-    password: 'YmpvZXJuLmtpbW1pbmljaEBnb29nbGVtYWlsLmNvbQ=='
+    email: 'psiinon@gmail.com',
+    password: 'cHNpaW5vbkBnbWFpbC5jb20='
   }).success(user => {
-    users.bjoern = user
+    users.psiinon = user
   })
   models.User.create({
     email: 'ciso@' + config.get('application.domain'),
