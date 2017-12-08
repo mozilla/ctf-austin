@@ -259,7 +259,7 @@ function createChallenges () {
   models.Challenge.create({
     name: 'Product Tampering',
     category: 'Privilege Escalation',
-    description: 'Change the <code>href</code> of the link within the <a href="/#/search?q=O-Saft">O-Saft product</a> description into <i>http://kimminich.de</i>.',
+    description: 'Change the <code>href</code> of the link within the <a href="/#/search?q=ZAP">ZAP product</a> description into <i>https://mozilla.com</i>.',
     difficulty: 3,
     hint: addHint('Look for one of the following: a) broken admin functionality, b) holes in RESTful API or c) possibility for SQL Injection.'),
     hintUrl: addHint('https://bkimminich.gitbooks.io/pwning-owasp-juice-shop/content/part2/privilege-escalation.html#change-the-href-of-the-link-within-the-o-saft-product-description'),
@@ -629,7 +629,7 @@ function createProducts () {
     if (product.useForChristmasSpecialChallenge) {
       description += ' (Seasonal special offer! Limited availability!)'
     } else if (product.useForProductTamperingChallenge) {
-      description += ' <a href="https://www.owasp.org/index.php/O-Saft" target="_blank">More...</a>'
+      description += ' <a href="https://www.owasp.org/index.php/ZAP" target="_blank">More...</a>'
     } else if (product.fileForRetrieveBlueprintChallenge) {
       let blueprint = product.fileForRetrieveBlueprintChallenge
       if (utils.startsWith(blueprint, 'http')) {
@@ -656,8 +656,8 @@ function createProducts () {
       if (product.description.match(/Seasonal special offer! Limited availability!/)) {
         products.christmasSpecial = product
         models.sequelize.query('UPDATE Products SET deletedAt = \'2014-12-27 00:00:00.000 +00:00\' WHERE id = ' + product.id)
-      } else if (product.description.match(/a href="https:\/\/www\.owasp\.org\/index\.php\/O-Saft"/)) {
-        products.osaft = product
+      } else if (product.description.match(/a href="https:\/\/www\.owasp\.org\/index\.php\/ZAP"/)) {
+        products.zap = product
         if (product.deletedAt) { // undo delete to be consistent about corresponding challenge difficulty
           models.sequelize.query('UPDATE Products SET deletedAt = null WHERE id = ' + product.id)
         }

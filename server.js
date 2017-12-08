@@ -132,7 +132,7 @@ app.route('/api/Users/:id')
 /* Products: Only GET is allowed in order to view products */
 app.post('/api/Products', insecurity.isAuthorized())
 // app.put('/api/Products/:id', insecurity.isAuthorized()); // = missing function-level access control vulnerability
-app.delete('/api/Products/:id', insecurity.denyAll()) // Deleting products is forbidden entirely to keep the O-Saft url-change challenge solvable
+app.delete('/api/Products/:id', insecurity.denyAll()) // Deleting products is forbidden entirely to keep the ZAP url-change challenge solvable
 /* Challenges: GET list of challenges allowed. Everything else forbidden independent of authorization (hence the random secret) */
 app.post('/api/Challenges', insecurity.denyAll())
 app.use('/api/Challenges/:id', insecurity.denyAll())

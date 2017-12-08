@@ -40,10 +40,10 @@ exports.errorHandlingChallenge = () => (err, req, res, next) => {
 }
 
 exports.databaseRelatedChallenges = () => (req, res, next) => {
-  if (utils.notSolved(challenges.changeProductChallenge) && products.osaft) {
-    products.osaft.reload().success(() => {
-      if (!utils.contains(products.osaft.description, 'https://www.owasp.org/index.php/O-Saft')) {
-        if (utils.contains(products.osaft.description, '<a href="http://kimminich.de" target="_blank">More...</a>')) {
+  if (utils.notSolved(challenges.changeProductChallenge) && products.zap) {
+    products.zap.reload().success(() => {
+      if (!utils.contains(products.zap.description, 'https://www.owasp.org/index.php/ZAP')) {
+        if (utils.contains(products.zap.description, '<a href="https://mozilla.com" target="_blank">More...</a>')) {
           utils.solve(challenges.changeProductChallenge)
         }
       }

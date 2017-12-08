@@ -183,27 +183,27 @@ describe('verify', () => {
       beforeEach(() => {
         challenges.changeProductChallenge = { solved: false, save: save }
         products = require('../../data/datacache').products
-        products.osaft = { reload: function () { return { success: function (cb) { cb() } } } }
+        products.zap = { reload: function () { return { success: function (cb) { cb() } } } }
       })
 
-      it('is solved when the link in the O-Saft product goes to http://kimminich.de', () => {
-        products.osaft.description = 'O-Saft, yeah! <a href="http://kimminich.de" target="_blank">More...</a>'
+      it('is solved when the link in the ZAP product goes to https://mozilla.com', () => {
+        products.zap.description = 'ZAP, yeah! <a href="https://mozilla.com" target="_blank">More...</a>'
 
         verify.databaseRelatedChallenges()(req, res, next)
 
         expect(challenges.changeProductChallenge.solved).to.equal(true)
       })
 
-      it('is not solved when the link in the O-Saft product is changed to an arbitrary URL', () => {
-        products.osaft.description = 'O-Saft, nooo! <a href="http://arbitrary.url" target="_blank">More...</a>'
+      it('is not solved when the link in the ZAP product is changed to an arbitrary URL', () => {
+        products.zap.description = 'ZAP, nooo! <a href="http://arbitrary.url" target="_blank">More...</a>'
 
         verify.databaseRelatedChallenges()(req, res, next)
 
         expect(challenges.changeProductChallenge.solved).to.equal(false)
       })
 
-      it('is not solved when the link in the O-Saft product remained unchanged', () => {
-        products.osaft.description = 'Vanilla O-Saft! <a href="https://www.owasp.org/index.php/O-Saft" target="_blank">More...</a>'
+      it('is not solved when the link in the ZAP product remained unchanged', () => {
+        products.zap.description = 'Vanilla ZAP! <a href="https://www.owasp.org/index.php/ZAP" target="_blank">More...</a>'
 
         verify.databaseRelatedChallenges()(req, res, next)
 
